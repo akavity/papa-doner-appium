@@ -19,7 +19,7 @@ public class AndroidDriverManager {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.0");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Medium Phone");
-        capabilities.setCapability(MobileCapabilityType.APP, "D:/stady/QA automation engineer/IT-Academy/class 15/av.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "D:/stady/QA automation engineer/IT-Academy/class 15/papaDoner.apk");
         capabilities.setCapability(NO_RESET, false);
 
         try {
