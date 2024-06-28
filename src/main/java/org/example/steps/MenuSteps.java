@@ -14,4 +14,11 @@ public class MenuSteps {
         Utils.sleep(2000);
         return el.isDisplayed();
     }
+
+    @Step
+    public boolean isDonerTitleDisplayed() {
+        SelenideElement el = menu.getDonerTitleField();
+        Utils.sleep(2000);
+        return el.isDisplayed();
+    }
 }

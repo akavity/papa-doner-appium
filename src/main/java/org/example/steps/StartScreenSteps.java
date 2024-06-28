@@ -32,4 +32,12 @@ public class StartScreenSteps {
         log.info("Click submit button");
         start.getSubmitButton().click();
     }
+
+    @Step
+    public void clickAllowButton() {
+        log.info("Click allow button");
+        SelenideElement element = start.getAllowButton();
+        Utils.waitUntilClickable(element);
+        element.click();
+    }
 }

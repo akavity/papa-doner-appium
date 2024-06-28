@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class StartScreenPage {
 
     private final SelenideElement submitButton = $(By.xpath("//android.widget.TextView[@text='Продолжить']"));
+    private final SelenideElement allowButton = $(By.id("com.android.permissioncontroller:id/permission_allow_button"));
 
     /**
      * @param type Доставка, Самовывоз
@@ -29,5 +30,9 @@ public class StartScreenPage {
 
     public SelenideElement getSubmitButton() {
         return submitButton;
+    }
+
+    public SelenideElement getAllowButton() {
+        return allowButton;
     }
 }
