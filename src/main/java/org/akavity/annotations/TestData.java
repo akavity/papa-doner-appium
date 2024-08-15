@@ -1,4 +1,4 @@
-package org.example.annotations;
+package org.akavity.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,6 +11,4 @@ public @interface TestData {
     String jsonFile();
 
     String model();
-
-    String folder();
 }

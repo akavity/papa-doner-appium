@@ -1,8 +1,8 @@
-import org.example.annotations.TestData;
-import org.example.models.donerTest.StartData;
-import org.example.steps.MenuSteps;
-import org.example.steps.StartScreenSteps;
-import org.example.utils.JsonReader;
+import org.akavity.annotations.TestData;
+import org.akavity.models.StartData;
+import org.akavity.steps.MenuSteps;
+import org.akavity.steps.StartScreenSteps;
+import org.akavity.utils.JsonReader;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +10,7 @@ public class DonerTest extends BaseTest {
     MenuSteps menu = new MenuSteps();
     StartScreenSteps start = new StartScreenSteps();
 
-    @TestData(jsonFile = "startData", model = "StartData", folder = "donerTest")
+    @TestData(jsonFile = "startData", model = "StartData")
     @Test(description = "Select address of cafe",
             dataProviderClass = JsonReader.class, dataProvider = "getData")
     public void selectPickUpDeliveryTest(StartData startData) {

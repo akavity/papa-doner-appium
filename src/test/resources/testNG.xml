@@ -3,8 +3,7 @@
 
 <suite name="Appium">
 
-    <test name="Medium Phone">
-        <parameter name="platform" value="android"/>
+    <test name="Pixel">
         <classes>
             <class name="DonerTest">
                 <methods>

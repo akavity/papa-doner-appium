@@ -1,13 +1,15 @@
-package org.example.steps;
+package org.akavity.steps;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import lombok.extern.log4j.Log4j2;
-import org.example.pages.StartScreenPage;
-import org.example.utils.Utils;
+import org.akavity.pages.StartScreenPage;
+import org.akavity.utils.Utils;
 
 @Log4j2
 public class StartScreenSteps {
+    private final int SUBMIT_X = 680;
+    private final int SUBMIT_Y = 2770;
 
     StartScreenPage start = new StartScreenPage();
 
@@ -30,7 +32,8 @@ public class StartScreenSteps {
     @Step
     public void clickSubmitButton() {
         log.info("Click submit button");
-        start.getSubmitButton().click();
+       // start.getSubmitButton().click();
+        Utils.clickCoordinates(SUBMIT_X,SUBMIT_Y);
     }
 
     @Step

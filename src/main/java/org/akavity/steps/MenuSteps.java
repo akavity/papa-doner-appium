@@ -1,9 +1,9 @@
-package org.example.steps;
+package org.akavity.steps;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
-import org.example.pages.MenuPage;
-import org.example.utils.Utils;
+import org.akavity.pages.MenuPage;
+import org.akavity.utils.Utils;
 
 public class MenuSteps {
     MenuPage menu = new MenuPage();
