@@ -14,18 +14,18 @@ public class StartScreenPage {
     /**
      * @param type Доставка, Самовывоз
      */
-    public SelenideAppiumElement deliveryTypeButton(String type) {
+    public SelenideAppiumElement getDeliveryTypeButton(String type) {
         return $(AppiumBy.xpath("//android.widget.TextView[@text='" + type + "']"));
     }
 
     /**
      * @param el Адрес доставки, Квартира, Этаж, Подъезд
      */
-    private SelenideAppiumElement addressElementField(String el) {
+    public SelenideAppiumElement getAddressElementField(String el) {
         return $(AppiumBy.xpath("//android.widget.TextView[@text='" + el + "']/.."));
     }
 
-    public SelenideAppiumElement cafeAddressButton(String address) {
+    public SelenideAppiumElement getCafeAddressButton(String address) {
         return $(AppiumBy.xpath("//android.widget.TextView[@text='Минск, " + address + "']"));
     }
 
